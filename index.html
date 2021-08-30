@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <link rel="icon" href="./chem icon.jpg";type="image/gif" sizes="16x16">
+    <style>
+        h1{color: black;text-align: center;}
+        .inputtext{border-bottom: black 2px solid;
+        border-top: hidden;
+        border-left: hidden;
+        border-right: hidden;}
+        table{border-collapse: collapse;}
+        table,tr,td{border: 1px gray solid;}
+        table,tr{text-align: center;}
+        p{text-align: center;font-size: small;font-weight: bold;}
+        a:hover{color: red;}
+        a:visited{color: lightskyblue;}
+        #logo1{position: fixed;
+        width: 1%;
+        background-repeat: no-repeat;
+        right: 150px;
+        bottom: 0px;}
+        .fie{margin-left: 350px;width: 800px;}
+        #gototop{text-align: center;}
+        #buttom{text-align: center;}
+    </style>
+</head>
+<body>
+    
+    <h1 id="top">如 你 願 測 試 檢 驗 中 心<br>分 析 服 務 單</h1>
+    <fieldset class="fie">
+        <legend>申請人基本資料</legend>
+    <form>
+        <label for="people">申請人：</label>
+        <input class="inputtext" type="text" id="people" value="請輸入申請人姓名" style="color: gray;"><br>
+        <label for="phone">電話：</label>
+        <input class="inputtext" type="text" id="phone" value="請輸入申請人電話" style="color: gray;"><br>   
+        <label for="eemail">e-mail：</label>
+        <input class="inputtext" type="text" id="eemail" value="請輸入申請人電子郵件" style="color: gray;"><br>
+        <label for="address">聯絡地址：</label>
+        <input class="inputtext" type="text" id="address" value="請輸入申請人電子郵件" style="color: gray;">
+        </datalist>
+    </form>
+    </fieldset><br>
+    <fieldset class="fie"> 
+        <legend>申請資料</legend>
+    <form>
+        <label for="company">物品名稱：</label>
+        <input class="inputtext" type="text" id="company" value="請輸入物品名稱" style="color: gray;"><br>
+        <label>是否須附物品照片：</label>
+        <input type="radio" name="photo" id="yes"><label for="yes">是</label>
+        <input type="radio" name="photo" id="no"><label for="no">否</label><br>
+        <label>寄送報告地址：</label>
+        <input type="radio" name="sendadress" id="self"><label for="self">自取</label>
+        <input type="radio" name="sendadress" id="thesame"><label for="thesame">同基本資料地址</label>
+        <input type="radio" name="sendadress" id="other"><label for="other">其他：</label><input type="text" value="請輸入地址" style="color: gray;border: hidden;"><br>
+        <label>寄送發票地址：</label>
+        <input type="radio" name="sendiv" id="self1"><label for="self1">自取</label>
+        <input type="radio" name="sendiv" id="thesame1"><label for="thesame1">同基本資料地址</label>
+        <input type="radio" name="sendiv" id="other1"><label for="other1">其他：</label><input type="text" value="請輸入地址" style="color: gray;border: hidden;">
+            </form>
+    </fieldset><br>
+    <fieldset class="fie">
+        <legend>委託資料</legend>
+    <form>
+     <table>
+         <tr class="tr1">
+             <td class="td1"><strong>委託項目</strong></td>
+             <td class="td2"><strong>參考法規</strong></td>
+             <td class="td3"><strong>數量</strong></td>
+             <td class="td4"><strong>單價(元)</strong></td>
+             <td class="td5"><strong>金額</strong></td>
+         </tr>
+         <tr>
+             <td class="td1">拉力試驗</td>
+             <td class="td2">
+                <input list="list1" >
+                <datalist id="list1">
+                    <option value="ASTM D638"></option>
+                    <option value="ISO 256-1"></option>
+                    <option value="CNS 10785"></option>
+                    <option value="成品測試"></option>
+                </datalist> 
+             </td>
+             <td class="td3">
+                <input list="num1" >
+                <datalist id="num1">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </datalist> 
+             </td>
+             <td class="td4">1200</td>
+             <td class="td5"></td>
+         </tr>
+         <tr>
+             <td class="td1">密度試驗</td>
+             <td class="td2">
+                <input list="list2" >
+                <datalist id="list2">
+                    <option value="ASTM D792"></option>
+                    <option value="ISO 1183-1"></option>
+                    <option value="成品測試"></option>
+                </datalist> 
+             </td>
+             <td class="td3">
+                <input list="num1" >
+                <datalist id="num1">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </datalist> 
+             </td>
+             <td class="td4">1000</td>
+             <td class="td5"></td>
+         </tr>
+         <tr>
+             <td class="td1">衝擊試驗</td>
+             <td class="td2">
+                <input list="list3" >
+                <datalist id="list3">
+                    <option value="ASTM D256"></option>
+                    <option value="ISO 180"></option>
+                    <option value="成品測試"></option>
+                </datalist> 
+             </td>
+             <td class="td3">
+                <input list="num1" >
+                <datalist id="num1">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </datalist> 
+             </td>
+             <td class="td4">1500</td>
+             <td class="td5"></td>
+         </tr>
+         <tr>
+             <td class="td1">尺寸試驗</td>
+             <td class="td2">
+                <input list="list4" >
+                <datalist id="list4">
+                    <option value="厚度"></option>
+                    <option value="寬度"></option>
+                    <option value="高度"></option>
+                </datalist> 
+             </td>
+             <td class="td3">
+                <input list="num1" >
+                <datalist id="num1">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </datalist> 
+             </td>
+             <td class="td4">400</td>
+             <td class="td5"></td>
+         </tr>
+         <tr>
+             <td class="td1">重量試驗</td>
+             <td class="td2">成品測試</td>
+             <td class="td3">
+                <input list="num1" >
+                <datalist id="num1">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </datalist> 
+             </td>
+             <td class="td4">800</td>
+             <td class="td5"></td>
+         </tr>
+     </table>
+    </form>
+    </fieldset><br>
+    <fieldset class="fie">
+        <legend>聯絡資訊</legend>
+        <label for="servicepeople">接洽窗口：</label>
+        <select name="servicepeople" id="servicepeople">
+        <optgroup label=分析技術組>
+            <option value="">廖小姐 #580</option>
+            <option value="">蔡小姐 #526</option>
+            <option value="">黃小姐 #622</option>
+        </optgroup>
+        <optgroup label="實驗輔導組">
+            <option value="">廖先生 #695</option>
+            <option value="">李小姐 #878</option>
+            <option value="">江先生 #668</option>
+        </optgroup>
+        <optgroup label="其他">
+            <option value="">陳經理 #632</option>
+            <option value="">歐組長 #685</option>
+        </optgroup>
+        </select><br>
+        公司電話：04-12345678<br>
+        公司地址：台中市東區忠孝東路87號<br>
+        如何得知測試資訊(可複選)：
+        <input type="checkbox" id="internet" name="howtoknow"><label for="internet">網路查詢</label>
+        <input type="checkbox" id="friend" name="howtoknow"><label for="friend">親友介紹</label>
+        <input type="checkbox" id="old"name="howtoknow"><label for="old">已經是舊客戶</label>
+        <input type="checkbox" id="others"name="howtoknow"><label for="others">其他</label><br>
+        是否有意願收到我司最新資訊：
+        <input type="radio" name="new" id="yes1"><label for="yes1">願意</label>
+        <input type="radio" name="new" id="no1"><label for="no1">不願意</label><br>
+        <hr>
+        想了解更多資訊：
+        <a href="https://www.google.com"><img src="./chem icon.jpg" alt="photo1" style="width: 3%;"></a>
+        <a href="https://www.google.com">官方網站</a>
+        、
+        <a href="https://tw.yahoo.com/">其餘相關網站</a>
+        </form>
+    </fieldset>
+    <div id="logo1"><a href="https://www.google.com"><img src="./chem icon.jpg" style="width: 150px;"></a></div>
+    <p>*當您回填完表單後，將會有專員與您聯繫，在煩請稍後，謝謝*</p>
+    <div id="gototop">
+        <a href="#top">回到頂端</a><br>
+    </div><br><br>
+    <div id="buttom">
+    <input type="submit" value="提交"></div><br><br><br><br><br>
+</body>
+</html>
